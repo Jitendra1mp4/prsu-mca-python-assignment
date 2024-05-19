@@ -1,0 +1,46 @@
+import turtle
+
+# Set up the screen
+screen = turtle.Screen()
+screen.setup(width=600, height=400)
+screen.bgcolor("white")
+
+# Create a turtle object
+pen = turtle.Turtle()
+pen.speed(2)  # Set the drawing speed
+pen.up()
+pen.bk(34)
+pen.bk(1)
+pen.setheading(90)
+pen.fd(200)
+pen.setheading(180)
+pen.fd(45)
+pen.down()
+pen.bk(90)
+pen.fd(45)
+pen.setheading(270)
+pen.fd(200)
+pen.up()
+pen.setheading(0)
+pen.up()
+pen.fd(45)
+pen.fd(45)
+# turtle.mainloop()
+
+pen.setheading(90)
+pen.fd(200)
+
+pen.down()
+pen.bk(140)
+pen.bk(10)
+pen.bk(10)
+pen.undo()
+pen.down()
+pen.circle(60,-180)
+pen.undo()
+pen.setheading(270)
+pen.circle(60,-180)
+pen.undo()
+pen.circle(60,180)
+pen.fd(150)
+turtle.mainloop()
